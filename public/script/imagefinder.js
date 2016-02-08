@@ -38,15 +38,16 @@ function produceResult(results) {
     mydiv.className = "searchResult";
     mydiv.className="col-sm-3";
     mydiv.setAttribute('style', 'padding: 5px');
+    var click=document.createElement("a");
     var image=document.createElement("img")
     image.setAttribute('src', url);
     image.setAttribute('alt', snip);
     image.setAttribute('style', "height:150px;")
-    //   var extractTxt = document.createTextNode(result.snippet);
+    click.setAttribute('href', result['url']);
     mainDiv.appendChild(mydiv);
-    mydiv.appendChild(image);
+    mydiv.appendChild(click);
+    click.appendChild(image);
 
-    //mydiv.appendChild(extractTxt);
   });
 };
 

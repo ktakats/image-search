@@ -35,6 +35,10 @@ h2{
   font-family: Roboto Mono;
 }
 
+img{
+  cursor: pointer;
+}
+
 .searchmatch{
   font-weight:bold;
 }

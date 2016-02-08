@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+
+body{
+  text-align: left;
+  background-color: white;
+  padding: 2%;
+}
+
+.header{
+  padding: 5px 10px 50px 10px;
+  color: black;
+  font-family: Roboto Mono;
+  font-size: 36px;
+}
+
+#search{
+  text-align: center;
+}
+
+input[type="text"]{
+  border-width: 3px;
+  border-radius: 2px;
+  border-color:black;
+
+}
+
+#output{
+  margin: 5%;
+  text-align: left;
+}
+
+h2{
+  color:#2886A6;
+  font-size: 32px;
+  font-family: Roboto Mono;
+}
+
+.searchmatch{
+  font-weight:bold;
+}

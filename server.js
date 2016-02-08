@@ -4,8 +4,11 @@ var express=require("express");
 var mongo=require("mongodb").MongoClient;
 var request = require('request');
 //var url = 'mongodb://localhost:27017/images';
-var url=process.env.MONGOLAB_URI;
+
 require('dotenv').config({silent: true});
+
+console.log(process.env.MONGOLAB_URI)
+var url=process.env.MONGOLAB_URI;
 
 var app=express();
 app.use(express.static(__dirname+ '/public'));
